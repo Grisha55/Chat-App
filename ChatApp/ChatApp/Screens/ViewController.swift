@@ -46,6 +46,8 @@ extension ViewController: UITableViewDelegate {
     tableView.deselectRow(at: indexPath, animated: true)
     
     // TODO: - Transition to ChatViewController
+    let vc = ChatViewController()
+    self.navigationController?.pushViewController(vc, animated: true)
   }
   
 }

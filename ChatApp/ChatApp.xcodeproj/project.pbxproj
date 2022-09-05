@@ -12,6 +12,9 @@
 		BE2C9B5B28C4EB2C0081C484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C9B5A28C4EB2C0081C484 /* ViewController.swift */; };
 		BE2C9B6028C4EB2E0081C484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2C9B5F28C4EB2E0081C484 /* Assets.xcassets */; };
 		BE2C9B6328C4EB2E0081C484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2C9B6128C4EB2E0081C484 /* LaunchScreen.storyboard */; };
+		BEADF65428C609750048361E /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEADF65328C609750048361E /* Sender.swift */; };
+		BEADF65628C609A00048361E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEADF65528C609A00048361E /* Message.swift */; };
+		BEADF65828C60A260048361E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEADF65728C60A260048361E /* ChatViewController.swift */; };
 		E5A2C34F14C2513B575BE4B0 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F896CAD75BAECFA0B97250F /* Pods_ChatApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		BE2C9B5F28C4EB2E0081C484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE2C9B6228C4EB2E0081C484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2C9B6428C4EB2E0081C484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEADF65328C609750048361E /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		BEADF65528C609A00048361E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BEADF65728C60A260048361E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,6 @@
 				BB8A84CD3D3985B5FE8336FA /* Pods-ChatApp.debug.xcconfig */,
 				3E0235496D1726DE6C3E0A23 /* Pods-ChatApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,14 +76,49 @@
 		BE2C9B5528C4EB2C0081C484 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				BEADF65A28C612D10048361E /* App */,
+				BEADF65228C609670048361E /* Models */,
+				BEADF65928C612B50048361E /* Screens */,
+				BEADF65B28C615290048361E /* Resources */,
+			);
+			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		BEADF65228C609670048361E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEADF65328C609750048361E /* Sender.swift */,
+				BEADF65528C609A00048361E /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEADF65928C612B50048361E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BE2C9B5A28C4EB2C0081C484 /* ViewController.swift */,
+				BEADF65728C60A260048361E /* ChatViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BEADF65A28C612D10048361E /* App */ = {
+			isa = PBXGroup;
+			children = (
 				BE2C9B5628C4EB2C0081C484 /* AppDelegate.swift */,
 				BE2C9B5828C4EB2C0081C484 /* SceneDelegate.swift */,
-				BE2C9B5A28C4EB2C0081C484 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEADF65B28C615290048361E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				BE2C9B5F28C4EB2E0081C484 /* Assets.xcassets */,
 				BE2C9B6128C4EB2E0081C484 /* LaunchScreen.storyboard */,
 				BE2C9B6428C4EB2E0081C484 /* Info.plist */,
 			);
-			path = ChatApp;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D76AAD1284443DC0953FEF91 /* Frameworks */ = {
@@ -203,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEADF65428C609750048361E /* Sender.swift in Sources */,
 				BE2C9B5B28C4EB2C0081C484 /* ViewController.swift in Sources */,
+				BEADF65628C609A00048361E /* Message.swift in Sources */,
 				BE2C9B5728C4EB2C0081C484 /* AppDelegate.swift in Sources */,
+				BEADF65828C60A260048361E /* ChatViewController.swift in Sources */,
 				BE2C9B5928C4EB2C0081C484 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
